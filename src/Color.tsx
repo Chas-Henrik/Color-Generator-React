@@ -1,10 +1,9 @@
 import './Color.css'
 let id = 0;
 
-function Color() {
-    const color:string = '#' + String(Math.floor(16777216*Math.random()).toString(16)).padStart(6, '0');
+function Color(props: {color: string}) {
     return (
-        <div className='color' key={id++} style={{backgroundColor: color}}>{color}</div>
+        <div className='color' key={id++} style={{backgroundColor: props.color}}>{props.color}</div>
         )
 }
 
