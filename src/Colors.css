@@ -1,4 +1,11 @@
 
+.colors-button {
+    display: block;
+    margin: 10px auto;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
 .colors-container {
     width: 100%;
     height: fit-content;
